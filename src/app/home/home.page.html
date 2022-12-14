@@ -1,0 +1,38 @@
+<ion-content>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/800px-Logo_DuocUC.svg.png" alt="DuocLogo">
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button [routerLink]="['../home']" fill="clear" color="medium" ><ion-icon name="home-outline"></ion-icon>Home</ion-button><br>
+      <ion-button [routerLink]="['../camera']" fill="clear" color="medium" ><ion-icon name="qr-code-outline"></ion-icon> QR </ion-button> <br>
+      <ion-button [routerLink]="['../loginselecction']" (click)="salir()" fill="clear" color="medium" ><ion-icon name="log-out"></ion-icon> Cerrar sesion </ion-button>  <br>
+
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      
+      <h4>¿Donde estamos?</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.5682092259935!2d-72.92800798409415!3d-41.47027957925666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183bde12d224d5%3A0xb1d39be19410d933!2sDuocUC%20Sede%20Puerto%20Montt!5e0!3m2!1ses-419!2scl!4v1665969642345!5m2!1ses-419!2scl" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>
+
+      <a href="https://www.duoc.cl/">
+        <ion-button  fill="clear" color="medium">Mas Informacion<ion-icon name="add-circle-outline"></ion-icon></ion-button>
+      </a> 
+
+    </ion-content>
+  </div>
+<br><br><br>
+<br>  
+</ion-content>
